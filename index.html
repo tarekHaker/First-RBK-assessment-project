@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("mM1-I2ZXPtQRCf56x");
+})();
+</script>
+    <title>Diagnolab</title>
+</head>
+<body>
+  <div class="titre">
+
+  <h1>Ce questionnaire validé appelé M-Chat, est conçu pour des enfants entre 16 et 30 mois.</h1>
+  <h2 id="instruction">Faîtes diagnostiquer votre enfant en moins de 3 minutes, répondez à ce questionnaire !</h2>
+
+</div>
+
+    <div  class="main" id="rsmail" style="display: none">
+      <h2 id="titreForm">Recevez votre résultat par e-mail!</h2>
+      <form> 
+        <div id="data">
+          <label for="name" id="lname"> Nom et prénom
+<input type="text" name="name" placeholder="Inscrivez votre Nom et prénom ici..." id="name" required>
+</label>
+
+<label for="email" id="lmail" >E-mail
+<input type="email" name="email" id="email" placeholder="Inscrivez votre e-mail ici..." required>
+</label>
+</div>
+
+<button type="submit" id="submit">Enoyez</button>
+      </form>
+      </div>
+
+<div class="main"  id="qs" >
+        <div id="label"><h3>Question <span id="qn">1</span> sur 23</h3></div>
+
+  <div id="questionnaire">
+    Votre enfant aime t-il être balancé sur vos genoux?
+ 
+    <div class="progress-bar" style="display: none;">
+      <div class="progress"></div>
+    </div>
+   </div>
+ <button id="oui">Oui</button>
+ <button id="non">non</button> <br>
+ <div id="reponse"></div>
+    <button id="precedent" style="display: none;">Precedent</button>
+    <button id="suivant" style="display: none;">Suivant</button>
+    <button id="result"  style="display: none;">Voir le resultat</button>
+  </div>
+      </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
