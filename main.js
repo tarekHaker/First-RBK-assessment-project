@@ -139,7 +139,7 @@ function calculeResulat(){
     let rs=0;
     
     for(c=0;c<rep.length;c++){
-        if (c!=17 && c!=19 && c!=21){
+        if (c!=10 && c!=17 && c!=19 && c!=21){
           if (rep[c]==="Non") {rs++;console.log(rs)}
           } 
           else{
